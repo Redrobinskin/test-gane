@@ -1,43 +1,21 @@
-Shared Dependencies:
+1. Flask: All the game code files will be using Flask, a Python web framework, for the backend.
 
-1. Exported Variables:
-   - `player`: Object representing the player's state, including inventory, skills, and current status in the game.
-   - `npcs`: Array of NPC objects.
-   - `gameState`: Object representing the current state of the game, including active challenges, storyline progress, and network status.
-   - `terminalState`: Object representing the current state of the terminal, including active plugins and command history.
-   - `multiplayerState`: Object representing the current state of multiplayer, including connected players and shared challenges.
+2. Game Logic: The "game_logic.py" file will contain the core game logic which will be used by "main.py", "flask_app.py", "game_views.py", "game_models.py", "game_tests.py", and "game_debug.py".
 
-2. Data Schemas:
-   - `PlayerSchema`: Defines the structure of the player object.
-   - `NpcSchema`: Defines the structure of NPC objects.
-   - `ChallengeSchema`: Defines the structure of challenge objects.
-   - `ItemSchema`: Defines the structure of inventory items.
-   - `SkillSchema`: Defines the structure of skills in the skill tree.
+3. Game Models: The "game_models.py" file will define the data schemas which will be used by "main.py", "flask_app.py", "game_views.py", "game_logic.py", "game_tests.py", and "game_debug.py".
 
-3. DOM Element IDs:
-   - `terminal`: The main terminal element.
-   - `inventory`: The player's inventory display.
-   - `skillTree`: The player's skill tree display.
-   - `networkMap`: The in-game network display.
-   - `storyline`: The storyline display.
-   - `multiplayer`: The multiplayer display.
+4. Game Views: The "game_views.py" file will define the Flask routes and views which will be used by "main.py", "flask_app.py", "game_logic.py", "game_models.py", "game_tests.py", and "game_debug.py".
 
-4. Message Names:
-   - `challengeComplete`: Emitted when a challenge is completed.
-   - `itemAcquired`: Emitted when an item is added to the inventory.
-   - `skillAcquired`: Emitted when a skill is learned.
-   - `storyProgress`: Emitted when the storyline progresses.
-   - `networkChange`: Emitted when the network status changes.
-   - `multiplayerEvent`: Emitted when a multiplayer event occurs.
+5. Game Tests: The "game_tests.py" file will contain the test cases for the game which will use the functions and variables from "main.py", "flask_app.py", "game_views.py", "game_logic.py", and "game_models.py".
 
-5. Function Names:
-   - `startChallenge()`: Starts a new challenge.
-   - `completeChallenge()`: Completes a challenge.
-   - `acquireItem()`: Adds an item to the inventory.
-   - `useItem()`: Uses an item from the inventory.
-   - `learnSkill()`: Learns a new skill.
-   - `progressStory()`: Progresses the storyline.
-   - `changeNetwork()`: Changes the network status.
-   - `startMultiplayer()`: Starts a multiplayer session.
-   - `joinMultiplayer()`: Joins a multiplayer session.
-   - `leaveMultiplayer()`: Leaves a multiplayer session.
+6. Game Debug: The "game_debug.py" file will contain the debugging code for the game which will use the functions and variables from "main.py", "flask_app.py", "game_views.py", "game_logic.py", and "game_models.py".
+
+7. Installation Guide: The "installation_guide.md" file will contain the instructions to install the game which will be based on the code in all the game code files.
+
+8. Operation Guide: The "operation_guide.md" file will contain the instructions to operate the game which will be based on the code in all the game code files.
+
+9. Reviews: The "checkpoint_x.md" files will contain the reviews of the game at different stages of development. They will be based on the game's state at each checkpoint, which is determined by the code in all the game code files.
+
+10. Markdown: All the documentation and review files will be written in Markdown, a lightweight markup language.
+
+11. Loop Iteration: The loop iteration variable 'x' will be used to name the review files and will be shared across all the review files.
